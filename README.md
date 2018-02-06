@@ -10,3 +10,10 @@ int walldistance=5,walldistanceMin=3;
 int initial=0,noOfPoint=0;         
 int pos[100][4];                              //1=persent not searched and 0 = searched
 int back=0;
+
+in this coding type we follow right wall following rule and also the bot can remember its previous decision
+like north east west south we have 0,1,2,3 for direction.
+and in every turn it changes its orientation values according to its real orientation and saves the data to the pos[100][4]
+2-D array for every point of time of making decision.
+noOfPoints saves the points of making decision and increment every time.
+Some cases like for going back to previous point "back" is incremented and the pos values changes according to it
